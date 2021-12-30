@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+</head>
+<body>
+
+    <div class="add-course">
+       
+        <div class="container">
+
+            <h1>CRUD System</h1>
+
+        <label for="">course name</label>
+        <input type="text" placeholder="cource name"  id="courseName">
+
+        <label for="">course category</label>
+        <input type="text" placeholder="cource category"  id="courseCategory">
+
+        <label for="">course price</label>
+        <input type="number" placeholder="cource price" id="coursePrice" >
+
+        <label for="">course description</label>
+        <textarea id="courseDescription" placeholder="cource Description" ></textarea>
+
+        <button onclick ="CreateCourses()">Add Cource</button>
+        <button onclick="ClearCourse()">clear</button>
+
+
+
+    </div>
+
+    <input type="search" onkeyup="searchCourse()" placeholder="search... " id="search" >
+
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>id</th>
+                <th>name</th>
+                <th>price</th>
+                <th>description</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+
+        <tbody id="display">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    </div>
+    
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
